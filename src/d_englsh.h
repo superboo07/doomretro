@@ -69,7 +69,7 @@
                             "isn't even remotely fair.\n\n"PRESSYN
 
 #define SWSTRING            "this is the shareware version of doom.\n\n"\
-                            "you need to order the entire trilogy.\n\n"PRESSKEY
+                            "you need to order the entire trilogy.\n\n"
 
 #define MSGOFF              "Messages OFF"
 #define MSGON               "Messages ON"

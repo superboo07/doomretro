@@ -487,11 +487,11 @@ void G_BuildTiccmd(ticcmd_t *cmd)
 
 static void G_SetInitialWeapon(void)
 {
+    viewplayer->weaponowned[wp_shotgun] = true;
     viewplayer->weaponowned[wp_fist] = true;
-    viewplayer->weaponowned[wp_pistol] = true;
 
     viewplayer->ammo[am_clip] = initial_bullets;
-
+    viewplayer->ammo[am_shell] = initial_bullets;
     if (!initial_bullets && weaponinfo[wp_pistol].ammotype != am_noammo)
     {
         viewplayer->readyweapon = wp_fist;
@@ -514,7 +514,7 @@ static void G_SetInitialWeapon(void)
 static void G_ResetPlayer(void)
 {
     viewplayer->health = initial_health;
-    viewplayer->armorpoints = 0;
+    viewplayer->armorpoints = initial_armor;
     viewplayer->armortype = armortype_none;
     viewplayer->preferredshotgun = wp_shotgun;
     viewplayer->fistorchainsaw = wp_fist;

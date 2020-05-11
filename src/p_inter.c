@@ -56,10 +56,11 @@
 // Maximums and such were hardcoded values. Need to externalize those for
 // dehacked support (and future flexibility). Most var names came from the key
 // strings used in dehacked.
-int             initial_health = 100;
+int             initial_health = 150;
 int             initial_bullets = 50;
-int             maxhealth = MAXHEALTH * 2;
-int             max_armor = 200;
+int             initial_armor = 100;
+int             maxhealth = MAXHEALTH * 3;
+int             max_armor = 300;
 int             green_armor_class = armortype_green;
 int             blue_armor_class = armortype_blue;
 int             max_soul = 200;
